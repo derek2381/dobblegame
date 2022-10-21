@@ -1,0 +1,129 @@
+html, body {
+  min-height: 100vh;
+}
+body {
+  font-family: "oswald", sans-serif;
+  font-size: 12px;
+}
+@media (min-height: 528px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (min-height: 592px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media (min-height: 736px) {
+  body {
+    font-size: 18px;
+  }
+}
+.board {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.status-bar {
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  width: 100%;
+ }
+.counter {
+  font-size: 1.15em;
+  font-weight: 700;
+}
+.card {
+  background-color: #ff4e50;
+  border: .625em solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 3px rgba(0,0,0,.15);
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1em;
+  height: 16em;
+  width: 16em;
+}
+button {
+  cursor: pointer;
+  border: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+button[class^="icon-"] {
+  background: transparent;
+  color: #fff;
+  font-size: 3em;
+  line-height: 1;
+  outline: 0;
+  padding: 0;
+  text-shadow: 1px 4px 3px rgba(0,0,0,0.3);
+  transition: text-shadow .15s ease-in;
+}
+button[class^="icon-"]:active {
+  text-shadow: none;
+}
+button[class^="icon-"]:nth-child(1) {
+  transform: rotate(140deg);
+}
+button[class^="icon-"]:nth-child(2) {
+  transform: rotate(180deg);
+  position: relative;
+  top: -.25em;
+}
+button[class^="icon-"]:nth-child(3) {
+  transform: rotate(-130deg);
+}
+button[class^="icon-"]:nth-child(4) {
+  transform: rotate(90deg);
+  position: relative;
+  left: -.25em;
+}
+button[class^="icon-"]:nth-child(5) {
+  font-size: 4em;
+}
+button[class^="icon-"]:nth-child(6) {
+  transform: rotate(-90deg);
+  position: relative;
+  right: -.25em;
+}
+button[class^="icon-"]:nth-child(7) {
+  transform: rotate(30deg);
+}
+button[class^="icon-"]:nth-child(8) {
+  transform: rotate(-30deg);
+}
+.overlay {
+  background-color: rgba(0,0,0,.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+}
+.inner {
+  font-size: 2.5em;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.btn {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  margin: .5em;
+  padding: .25em 1em;
+  text-transform: inherit;
+}
